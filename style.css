@@ -12,6 +12,7 @@ p    {
       list-style-type: none;
       margin: 0 2vw;
       font-size: 3vh;
+      display: inline;
     }
 .nav a{
       text-decoration: none;
