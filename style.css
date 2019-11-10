@@ -1,6 +1,6 @@
 .nav li{
       list-style-type: none;
-      margin: 0 0.2cm;
+      margin: 0 0;
       font-size: 0.6cm;
       display: inline;
     }
@@ -15,7 +15,6 @@
     }
 .nav nav{
       width: 100vw;
-      background-color: #82A1AF;
     }
 .nav body{
       margin:0;
@@ -23,6 +22,7 @@
 .nav ul{
       margin: 0;
       padding: 0;
+      background-color: #82A1AF;
       <!--display: flex;-->
     }
 body {
