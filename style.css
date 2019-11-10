@@ -1,13 +1,13 @@
 .nav li{
       list-style-type: none;
-      margin: 0 2vw;
-      font-size: 3vh;
+      margin: 0 0.2cm;
+      font-size: 0.6cm;
       display: inline;
     }
 .nav a{
       text-decoration: none;
       color: black;
-      padding: 2vw;
+      padding: 0.2cm;
       font-family: monospace;
     }
 .nav a:hover{
