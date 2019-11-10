@@ -1,3 +1,4 @@
+<nav>
 <ul>
   <li><a href="https://www.jennifer.sh/">Home</a></li>
   <li><a href="creative">Creative</a></li>
@@ -5,32 +6,36 @@
   <li><a href="christmas">Christmas</a></li>
   <li style="float:right"><a class="active" href="about">About</a></li>
 </ul>
-ul {
+
+ li{
   list-style-type: none;
+  margin: 0 2vw;
+  font-size: 3vh;
+ }
+ a{
+  text-decoration: none;
+  color: black;
+  padding: 2vw;
+  font-family: monospace;
+ }
+ a:hover{
+  background-color: #C6E9FF;
+ }
+ nav{
+  width: 100vw
+  background-color: #D6EFFF;
+ }
+ body{
+  margin:0;
+ }
+  
+  
+ul{
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-ul {
+  display: flex;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }
+</nav>
