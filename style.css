@@ -1,13 +1,3 @@
-body {
-  background-color: #C9FBE8;
-<!--  background-image: url("background.jpg");-->
-}
-h1   {
-  color: #27779C;
-}
-p    {
-  color: #27779C;
-}
 .nav li{
       list-style-type: none;
       margin: 0 2vw;
@@ -36,3 +26,14 @@ p    {
       padding: 0;
       <!--display: flex;-->
     }
+body {
+  background-color: #C9FBE8;
+<!--  background-image: url("background.jpg");-->
+}
+h1   {
+  color: #27779C;
+}
+p    {
+  color: #27779C;
+}
+
