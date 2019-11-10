@@ -8,3 +8,29 @@ h1   {
 p    {
   color: #27779C;
 }
+.nav li{
+      list-style-type: none;
+      margin: 0 2vw;
+      font-size: 3vh;
+    }
+.nav a{
+      text-decoration: none;
+      color: black;
+      padding: 2vw;
+      font-family: monospace;
+    }
+.nav a:hover{
+      background-color: #C6E9FF;
+    }
+.nav nav{
+      width: 100vw
+      background-color: #D6EFFF;
+    }
+.nav body{
+      margin:0;
+    }
+.nav ul{
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
