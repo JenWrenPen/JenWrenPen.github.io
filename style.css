@@ -1,0 +1,38 @@
+.nav li{
+      list-style-type: none;
+      margin: 0 0;
+      font-size: 0.6cm;
+      display: inline;
+    }
+.nav a{
+      text-decoration: none;
+      color: black;
+      padding: 0.2cm;
+      font-family: monospace;
+    }
+.nav a:hover{
+      background-color: #C6E9FF;
+    }
+.nav nav{
+      width: 100vw;
+    }
+.nav body{
+      margin:0;
+    }
+.nav ul{
+      margin: 0;
+      padding: 0;
+      background-color: #82A1AF;
+      <!--display: flex;-->
+    }
+body {
+  background-color: #C9FBE8;
+<!--  background-image: url("background.jpg");-->
+}
+h1   {
+  color: #27779C;
+}
+p    {
+  color: #27779C;
+}
+
