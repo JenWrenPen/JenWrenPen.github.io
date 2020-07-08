@@ -62,18 +62,14 @@ margin-top: 20px;
       overflow: hidden; 
       object-position: 50% 100%;
 }
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+html, body, #wrapper {
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
 }
-th, td {
-  padding: 5px;
-}
-th {
-  text-align: left;
-}
-.verticalcenter {
-    display: table-cell;
-    height: 400px;
-    vertical-align: middle;
+#wrapper td {
+   vertical-align: middle;
+   text-align: center;
 }
