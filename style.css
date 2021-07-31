@@ -13,8 +13,9 @@
       font-family: Arial, sans-serif;
     }
 .nav a:hover{
-      background-color: #C9FBE8;
-      color: #0e435c;
+      background-color: #6c9fa2;
+      transition: 0.4s;
+      color: #C9FBE8;
     }
 .nav nav{
       
@@ -47,6 +48,13 @@ h2   {
      color: #0e435c;
      padding-left: 20px;
      padding-right: 20px;
+     font-size: 0.5cm;
+}
+h3   {
+     color: #C9FBE8
+     padding-left: 20px;
+     padding-right: 20px;
+     font-size: 0.5cm;
 }
 p    {
      color: #0e435c;
@@ -54,9 +62,19 @@ p    {
      padding-left: 20px;
      padding-right: 20px;
 }
+.TableTitle {
+     color: #0e435c;
+     font-size: 0.5cm;
+     padding-left: 20px;
+     padding-right: 20px;
+     text-align: center;
+}
 .content {
      margin: 1em;
      width: 90%;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
 }
 .footer img{
       width: 100%;
@@ -67,4 +85,53 @@ p    {
 }
 ul	{
      color: #0e435c;
+}
+
+.accordion {
+  background-color: #0e435c;
+  color: #C9FBE8;
+  cursor: pointer;
+  padding: 18px;
+  vertical-align: middle;
+  /*width: 100%;*/
+  text-align: center;
+  /*border: none;*/
+  outline: none;
+  transition: 0.4s;
+  font-size: 0.5cm;
+  border-top: 2px solid #C9FBE8;
+  border-bottom: 2px solid #C9FBE8;
+  border-left: none;
+  border-right: none;
+}
+
+.active, .accordion:hover {
+  background-color: #6c9fa2;
+  color: #C9FBE8;
+  font-size: 0.5cm;
+}
+.panel {
+  padding: 0 18px;
+  background-color: #C9FBE8;
+  color: #0e435c;
+  display: none;
+  overflow: hidden;
+  float: center;
+  text-align: center;
+}
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 0.9cm;
+  color: #C9FBE8;
+  float: right;
+  border: none;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+  font-size: 0.9cm;
+  float: right;
+  border: none;
+  margin-left: 5px;
 }

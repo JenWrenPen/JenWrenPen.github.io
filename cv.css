@@ -1,0 +1,193 @@
+#employment td{
+  border: none;
+  padding: 8px;
+    color: #0e435c;
+}
+
+#education td {
+  border: none;
+  padding: 8px;
+    color: #0e435c;
+}
+.skillsbar {
+  position: absolute;
+  overflow: hidden;
+  background-color: #C9FBE8;
+}
+
+
+.skillsbar a {
+  float: center;
+  font-size: 16px;
+  color: #0e435c;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.subskills {
+  position: center;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.subskills .subskillsbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #0e435c;
+  padding: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: none;
+  transition: 0.4s;
+    display: flex;
+    justify-content: center;
+}
+
+
+.skillsbar a:hover, .subskills:hover .subskillsbtn {
+  background-color: #0e435c;
+  color: #C9FBE8;
+}
+
+.subskills-content {
+  display: none;
+  position: absolute;
+  background-color: #b2e4d7;
+  width: 600px;
+  z-index: 1;
+  /*display: relative;*/
+  margin: auto;
+  /*horizontal-align: middle;*/
+    left: 0;
+    right: 0;
+}
+
+.subskills-content a {
+  float: left;
+  color: #0e435c;
+  text-decoration: none;
+  text-align: center;
+}
+
+.subskills-content a:hover {
+  background-color: #C9FBE8;
+  color: #0e435c;
+}
+
+.subskills:hover .subskills-content {
+  display: block;
+}
+
+.imgBoxIT {
+  width: 102px;
+  height: 102px;
+  background: url('it.png') no-repeat;
+  padding: 1px;
+}
+.imgBoxIT:hover {
+  width: 102px;
+  height: 102px;
+  background: url('ithover.png') no-repeat;
+  padding: 1px;
+}
+.imgBoxMATHS {
+  width: 100px;
+  height: 100px;
+  background: url('maths.png') no-repeat;
+}
+.imgBoxMATHS:hover {
+  width: 100px;
+  height: 100px;
+  background: url('mathshover.png') no-repeat;
+}
+.imgBoxCOMMS {
+  width: 100px;
+  height: 100px;
+  background: url('comms.png') no-repeat;
+}
+.imgBoxCOMMS:hover {
+  width: 100px;
+  height: 100px;
+  background: url('commshover.png') no-repeat;
+}
+.imgBoxMISC {
+  width: 100px;
+  height: 100px;
+  background: url('misc.png') no-repeat;
+}
+.imgBoxMISC:hover {
+  width: 100px;
+  height: 100px;
+  background: url('mischover.png') no-repeat;
+}
+
+#skills table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+#skills td, th {
+  border: none;
+  padding: 8px;
+  color: #0e435c;
+  text-align: center;
+}
+
+#skills tr:hover {
+  background-color: #b2e4d7;
+}
+
+#skills th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #9acdc5;
+}
+body {
+  overflow-y: scroll;
+  margin-bottom: 600px;
+}
+p {
+  width: 600px;
+  margin: auto;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h2 {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+}
+.accordion {
+  width: 600px;
+  margin: auto;
+  /*horizontal-align: middle;*/
+  /*display: inline-block;*/
+  position: relative;
+  display: block;
+}
+#QualInt table {
+  width: 600px;
+    left: 0;
+    right: 0;
+}
+#QualInt td, th {
+  border: none;
+  padding: 8px;
+    color: #0e435c;
+  text-align: center;
+}
+
+#QualInt th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #9acdc5;
+}
+.panel {
+  width: 600px;
+  margin: auto;
+}
