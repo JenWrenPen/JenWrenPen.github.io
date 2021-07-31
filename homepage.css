@@ -1,0 +1,17 @@
+.fancycontainer {
+  position: relative;
+  width: 100%;
+  width: 450px;
+  height: 600px;
+  margin: auto;
+}
+
+.fancycontainer img {
+  width: 100%;
+  height: auto;
+}
+
+#image_map img {
+  width: 100%;
+  margin: auto;
+}
