@@ -33,11 +33,11 @@
       <!--display: flex;-->
     }
 body {
-     margin: 0;
      background-color: #C9FBE8;
      font-family: Arial, sans-serif;
-     <!--  background-image: url("background.jpg");-->
      width: 100vw;
+     margin: 0;
+
 }
 h1   {
      color: #0e435c;
@@ -73,6 +73,8 @@ p    {
      margin: 1em;
      width: 90%;
   padding: 0 18px;
+  width: 800px;
+  margin: auto;
 
   overflow: hidden;
 }
@@ -118,6 +120,8 @@ ul	{
   overflow: hidden;
   float: center;
   text-align: center;
+  width: 600px;
+  margin: auto;
 }
 .accordion:after {
   content: '+'; /* Unicode character for "plus" sign (+) */
@@ -134,4 +138,7 @@ ul	{
   float: right;
   border: none;
   margin-left: 5px;
+}
+a {
+  color: #0e435c;
 }
