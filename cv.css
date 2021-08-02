@@ -147,8 +147,8 @@
   background-color: #9acdc5;
 }
 body {
-    min-height:100%;
-    position:fixed;
+    top: 0;
+    position:sticky;
     overflow-y:scroll;
     overflow-x:hidden;
   margin-bottom: 200px;
