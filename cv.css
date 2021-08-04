@@ -173,6 +173,22 @@ h2 {
   position: relative;
   display: block;
 }
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 0.9cm;
+  color: #C9FBE8;
+  float: right;
+  border: none;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+  font-size: 0.9cm;
+  float: right;
+  border: none;
+  margin-left: 5px;
+}
 #QualInt table {
   width: 600px;
     left: 0;
