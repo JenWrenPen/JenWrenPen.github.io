@@ -1,41 +1,72 @@
-.nav li{
-      list-style-type: none;
-      margin: 0 0;
-      font-size: 0.6cm;
-      display: inline;
-    }
-.nav a{
-      text-decoration: none;
-      color: #C9FBE8;
-      padding: 0.2cm;
-      padding-right:0.5cm;
-      padding-left:0.5cm;
-      font-family: Arial, sans-serif;
-    }
-.nav a:hover{
-      background-color: #6c9fa2;
-      transition: 0.4s;
-      color: #C9FBE8;
-    }
-.nav nav{
-      
-    }
-.nav body{
-      margin:0;
-    }
-.nav ul{
-      text-align:center;
-      margin: 0 0;
-      padding: 0.2cm;
-      padding-right:0.5cm;
-      padding-left:0.5cm;
-      background-color: #0e435c;
-      <!--display: flex;-->
-    }
+/***** Mobile *****/
+.mobnav li{
+  list-style-type: none;
+  margin: 0 0;
+  font-size: 90px;
+  display: inline;
+}
+.mobnav a:hover{
+  background-color: #6c9fa2;
+  transition: 0.4s;
+}
+.mobnav body{
+  margin:0;
+}
+.mobnav ul{
+  text-align:center;
+  margin: 0 0;
+  padding: 5px;
+  background-color: #0e435c;
+}
+.nav {
+  display: none;
+}
+
+
+/***** Laptops & Desktops *****/
+@media only screen and (min-width: 992px) {
+  .mobnav {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0e435c;
+  }
+  .nav li{
+    list-style-type: none;
+    margin: 0 0;
+    font-size: 1.5em;
+    display: inline;
+  }
+  .nav a{
+    text-decoration: none;
+    color: #C9FBE8;
+    padding: 0.2cm;
+    padding-right:0.5cm;
+    padding-left:0.5cm;
+    font-family: Arial, sans-serif;
+  }
+  .nav a:hover{
+    background-color: #6c9fa2;
+    transition: 0.4s;
+    color: #C9FBE8;
+  }
+  .nav body{
+    margin: 0;
+  }
+  .nav ul{
+    text-align:center;
+    margin: 0 0;
+    padding: 0.2cm;
+    padding-right:0.5cm;
+    padding-left:0.5cm;
+    background-color: #0e435c;
+  }
+}
 body {
      background-color: #C9FBE8;
      font-family: Arial, sans-serif;
-     
      margin: 0;
 }
 h1   {
@@ -47,19 +78,20 @@ h2   {
      color: #0e435c;
      padding-left: 20px;
      padding-right: 20px;
-     font-size: 0.5cm;
+     font-size: 1em;
 }
 h3   {
      color: #C9FBE8
      padding-left: 20px;
      padding-right: 20px;
-     font-size: 0.5cm;
+     font-size: 2em;
 }
 p    {
      color: #0e435c;
-     font-size: 0.5cm;
+     font-size: 1em;
      padding-left: 20px;
      padding-right: 20px;
+     max-height: 999999px;
 }
 .TableTitle {
      color: #0e435c;

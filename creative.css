@@ -1,9 +1,68 @@
+/***** Mobile *****/
 .tab {
   overflow: hidden;
   border: none;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+  margin: 0;
+}
+.tab button {
+  background-color: #C9FBE8;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.3s;
+}
+.tab button:hover {
+  background-color: #9acdc5;
+}
+.tab button.active {
+  background-color: #6c9fa2;
+}
+.tabcontent {
+  display: none;
+  border: none;
+  border-top: none;
+  width: 90%;
+  text-align: justify;
+  font-size: 2em;
+  color: #0e435c;
+}
+.tabcontent p {
+  margin-left: 5%;
+  margin-left: 5%;
+  margin-top: 4vw;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+.gallery ul {
+  column-count: 2;
   margin: none;
+  padding: none;
+  width: 100%;
+}
+.gallery li{
+  width: 100%;
+  list-style-type: none;
+}
+.gallery img{
+  margin-top: 4vw;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/***** Laptops & Desktops *****/
+@media only screen and (min-width: 992px) {
+
+.tab {
+  overflow: hidden;
+  border: none;
+  display: flex;
+  justify-content: center;
   padding-top: 50px;
 }
 .tab button {
@@ -31,49 +90,49 @@
   width: 750px;
   margin: auto;
   text-align: justify;
+  font-size: 1em;
 }
+.tabcontent p {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+.gallery ul {
+  column-count: 3;
+  padding: 0;
+}
+.gallery img{
+  margin: 0;
+  margin-top: 16px;
+  vertical-align: middle;
+  width: 100%;
+}
+}
+
 p {
   padding: 0;
 }
 h2 {
   padding: 0;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
 
-.column {
-  /*flex: 25%;*/
-  max-width: 242px;
-  border-right: 8px solid #C9FBE8;
-}
-.column:last-child {
-    border-right: none;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
 .hoverable {
-        width: auto;
-        height: auto;
-        position: relative;
-        display: inline-block;
-        margin: 0;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  margin: 0;
 }
 .hoverable .hover-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 .hoverable:hover .hover-top {
-    display: inline;
+  display: inline;
 }
 body {
   margin-bottom: 20px;
