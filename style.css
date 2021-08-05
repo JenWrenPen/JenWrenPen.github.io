@@ -22,7 +22,6 @@
   display: none;
 }
 
-
 /***** Laptops & Desktops *****/
 @media only screen and (min-width: 992px) {
   .mobnav {
@@ -65,61 +64,59 @@
   }
 }
 body {
-     background-color: #C9FBE8;
-     font-family: Arial, sans-serif;
-     margin: 0;
+  background-color: #C9FBE8;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
-h1   {
-     color: #0e435c;
-     padding-left: 20px;
-     padding-right: 20px;
+h1 {
+  color: #0e435c;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-h2   {
-     color: #0e435c;
-     padding-left: 20px;
-     padding-right: 20px;
-     font-size: 1em;
+h2 {
+  color: #0e435c;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1em;
 }
-h3   {
-     color: #C9FBE8
-     padding-left: 20px;
-     padding-right: 20px;
-     font-size: 2em;
+h3 {
+  color: #C9FBE8
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 2em;
 }
-p    {
-     color: #0e435c;
-     font-size: 1em;
-     padding-left: 20px;
-     padding-right: 20px;
-     max-height: 999999px;
+p {
+  color: #0e435c;
+  font-size: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-height: 999999px;
 }
 .TableTitle {
-     color: #0e435c;
-     font-size: 0.5cm;
-     padding-left: 20px;
-     padding-right: 20px;
-     text-align: center;
+  color: #0e435c;
+  font-size: 0.5cm;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 .content {
-     margin: 1em;
-     width: 90%;
+  margin: 1em;
+  width: 90%;
   padding: 0 18px;
   width: 800px;
   margin: auto;
-
   overflow: hidden;
 }
 .footer img{
-      width: 100%;
-      height: 15vw;
-      object-fit: cover;
-      overflow: hidden; 
-      object-position: 50% 100%;
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  overflow: hidden; 
+  object-position: 50% 100%;
 }
-ul	{
-     color: #0e435c;
+ul {
+  color: #0e435c;
 }
-
 .accordion {
   background-color: #0e435c;
   color: #C9FBE8;
@@ -137,7 +134,6 @@ ul	{
   border-left: none;
   border-right: none;
 }
-
 .active, .accordion:hover {
   background-color: #6c9fa2;
   color: #C9FBE8;
@@ -154,7 +150,6 @@ ul	{
   width: 600px;
   margin: auto;
 }
-
 a {
   color: #0e435c;
 }
