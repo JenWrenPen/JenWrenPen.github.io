@@ -1,3 +1,71 @@
+/***** Mobile *****/
+.subskills-content {
+  display: none;
+  position: absolute;
+  background-color: #b2e4d7;
+  width: 90%;
+  z-index: 1;
+  /*display: relative;*/
+  margin: auto;
+  /*horizontal-align: middle;*/
+  left: 0;
+  right: 0;
+}
+.accordion {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /*margin: auto;*/
+  /*horizontal-align: middle;*/
+  /*display: inline-block;*/
+  position: relative;
+  display: block;
+}
+p {
+  font-size: 2em;
+}
+h2 {
+  font-size: 2em;
+}
+.panel {
+  width: 90%;
+}
+/***** Laptops & Desktops *****/
+@media only screen and (min-width: 992px) {
+  .subskills-content {
+    display: none;
+    position: absolute;
+    background-color: #b2e4d7;
+    width: 800px;
+    z-index: 1;
+    /*display: relative;*/
+    margin: auto;
+    /*horizontal-align: middle;*/
+    left: 0;
+    right: 0;
+}
+.accordion {
+  width: 800px;
+  margin: auto;
+  /*horizontal-align: middle;*/
+  /*display: inline-block;*/
+  position: relative;
+  display: block;
+}
+.panel {
+  width: 800px;
+}
+p {
+  font-size: 1em;
+}
+h2 {
+  font-size: 1em;
+}
+}
+#employment p {
+  padding-left: 0;
+  padding-right: 0;
+}
 #employment td{
   border: none;
   padding: 8px;
@@ -18,7 +86,7 @@
 
 .skillsbar a {
   float: center;
-  font-size: 16px;
+  /*font-size: 16px;*/
   color: #0e435c;
   text-align: center;
   display: inline-block;
@@ -32,7 +100,7 @@
 }
 
 .subskills .subskillsbtn {
-  font-size: 16px;
+  /*font-size: 16px;*/
   border: none;
   outline: none;
   color: #0e435c;
@@ -41,8 +109,8 @@
   font-family: inherit;
   margin: none;
   transition: 0.4s;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -51,7 +119,7 @@
   color: #C9FBE8;
 }
 
-.subskills-content {
+/*.subskills-content {
   display: none;
   position: absolute;
   background-color: #b2e4d7;
@@ -60,9 +128,9 @@
   /*display: relative;*/
   margin: auto;
   /*horizontal-align: middle;*/
-    left: 0;
-    right: 0;
-}
+  left: 0;
+  right: 0;
+}*/
 
 .subskills-content a {
   float: left;
@@ -126,7 +194,7 @@
 #skills table {
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width:  100%;/*600px;*/
 }
 
 #skills td, th {
@@ -154,25 +222,25 @@ body {
   margin-bottom: 200px;
 }
 p {
-  width: 600px;
+  width: 90%;/*600px;*/
   margin: auto;
   text-align: justify;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 h2 {
-  width: 600px;
+  width: 90%;/*600px;*/
   margin: auto;
   margin-top: 20px;
 }
-.accordion {
+/*.accordion {
   width: 600px;
   margin: auto;
   /*horizontal-align: middle;*/
   /*display: inline-block;*/
   position: relative;
   display: block;
-}
+}*/
 .accordion:after {
   content: '+'; /* Unicode character for "plus" sign (+) */
   font-size: 0.9cm;
@@ -190,7 +258,7 @@ h2 {
   margin-left: 5px;
 }
 #QualInt table {
-  width: 600px;
+  width: 100%;/*600px;*/
     left: 0;
     right: 0;
 }

@@ -1,11 +1,34 @@
-.container {
-        display: flex;
-        align-items: center;
-        justify-content: center
+/***** Mobile *****/
+.mobcontent {
+  display:block;
+}
+.PCcontainer {
+  display: none;
+}
+.mobcontainer {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5em;
 }
 img {
-        max-width: 100%
+  max-width: 100%
 }
-.image {
-        flex-basis: 100%
+/***** Laptops & Desktops *****/
+@media only screen and (min-width: 992px) {
+  .mobcontainer {
+    display: none;
+  }
+  /*.PCcontent {
+    display: flex;
+  }*/
+  .PCcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+  }
+  .image {
+    flex-basis: 100%
+  }
 }
