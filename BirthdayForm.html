@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>Party Party Party!</title>
+  <link rel="icon" type="image/ico" href="birthday.ico">
+  <link rel="stylesheet" type="text/css" href="32birthday.css">
+  <script>
+	function showHideOtherOptions(){
+		if(document.getElementById('wouldlove').checked|document.getElementById('begrudgingly').checked) {
+			document.getElementById('YouAreAttending').style.display='block';
+		} else {
+			document.getElementById('YouAreAttending').style.display='none';
+		}
+
+	};
+	window.addEventListener("load", function() {
+  const form = document.getElementById('ThisForm');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Thank you!");
+      window.location = 'CelebratesTurning32.html';
+    })
+  });
+});
+  </script>
+
+</head>
+<body>
+ <p style="text-align:center;"><IMG SRC="twopower5.gif"></p>
+<head>
+  <title>Jenny's 100000th Birthday!</title>
+</head>
+  <h1 style="font-size:25px;text-align:center;">Jenny's 100000th Birthday!</h1>
+  <p>Saturday 15th July, 18:00</p>
+
+<form method="POST" action="https://script.google.com/macros/s/AKfycbwUX5Wg0h0FDLNPNV7lHqUToIx7eqqPy_WwDSdsc_8fZYA8tj6kK4Cw76mKqwmwyNyD/exec" id="ThisForm">
+<fieldset id="AreYouAttending">
+<p style="text-align:left">Can you attend?</p>
+  <p style="text-align:left">My name is:</p>
+  <input name="Name" type="text" placeholder="Name" required><br>
+  <p style="text-align:left">and I...</p>
+  <input type="radio" id="wouldlove" name="Attendance" value="Yes" onclick="showHideOtherOptions()">
+  <label for="wouldlove">would love to come to your party! See you there!</label><br>
+  <input type="radio" id="begrudgingly" name="Attendance" value="Yes" onclick="showHideOtherOptions()">
+  <label for="begrudgingly">begrudgingly accept the invitiation.</label><br>
+  <input type="radio" id="sorry" name="Attendance" value="No" onclick="showHideOtherOptions()">
+  <label for="sorry">am sorry, I already have plans.</label><br>
+  <input type="radio" id="why" name="Attendance" value="No" onclick="showHideOtherOptions()">
+  <label for="why">am confused as to why you've invited me. Byeeeee.</label><br><br>
+</fieldset>
+<fieldset id="YouAreAttending" style="display:none">
+  <p style="text-align:left">Hooray! Hit me up with some info, please :)</p><br>
+  <input name="Email" type="email" placeholder="Email (optional)"><br>
+  <p style="text-align:left">How many plus ones are you bringing?
+  <input type="number" id="plusones" name="PlusOnes" min="0" max="10" placeholder="0"></p>
+  <p style="text-align:left">Do you have any dietary needs?</p><br>
+  <input type="radio" id="none" name="DietaryNeeds" value="No">
+  <label for="none">Nope.</label><br>
+  <input type="radio" id="vegetarian" name="DietaryNeeds" value="Vegetarian">
+  <label for="vegetarian">Yep, I'm a vegetarian!</label><br>
+  <input type="radio" id="vegan" name="DietaryNeeds" value="Vegan">
+  <label for="vegan">Yeah, I'm vegan!</label><br>
+  <input type="radio" id="other" name="DietaryNeeds" value="Other">
+  <label for="other">Other/It's complicated...</label><br>
+  <p style="text-align:left">If you want to tell me anything about food allergies or preferences, write it here:</p><br>
+  <input name="FoodNotes" type="text" placeholder="I am allergic to..."><br><br>
+</fieldset>
+<p>
+  <button type="submit">Send</button>
+</p>
+</form>
+
+<br />
+<p style="font-size:10px;"><br>Jenny made this!</p>
+
+</body>
+</html>
