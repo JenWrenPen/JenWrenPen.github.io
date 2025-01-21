@@ -22,9 +22,16 @@
   display: block;
 }
 p {
-  font-size: 2em;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20;
+  text-align: justify;
 }
 h2 {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   font-size: 2em;
 }
 .panel {
@@ -56,11 +63,18 @@ h2 {
   width: 800px;
 }
 p {
+  margin:auto;
   font-size: 1em;
   width: 800px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 h2 {
+  margin:auto;
   font-size: 1em;
+  width: 800px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 }
 #employment p {
@@ -222,18 +236,18 @@ body {
     overflow-x:hidden;
   margin-bottom: 200px;
 }
-p {
+\*p {
   width: 800px;
   margin: auto;
   text-align: justify;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-h2 {
+}*\
+\*h2 {
   width: 800px;
   margin: auto;
   margin-top: 20px;
-}
+}*\
 /*.accordion {
   width: 600px;
   margin: auto;

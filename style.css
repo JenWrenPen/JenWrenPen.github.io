@@ -14,14 +14,33 @@
 }
 .mobnav ul{
   text-align:center;
-  margin: 0 0;
+  margin: 0;
   padding: 5px;
   background-color: #0e435c;
 }
 .nav {
   display: none;
 }
-
+p {
+  color: #0e435c;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20;
+}
+h2 {
+  color: #0e435c;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 2em;
+}
+ul {
+  color: #0e435c;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20;
+}
 /***** Laptops & Desktops *****/
 @media only screen and (min-width: 992px) {
   .mobnav {
@@ -62,6 +81,26 @@
     padding-left:0.5cm;
     background-color: #0e435c;
   }
+  p {
+    color: #0e435c;
+    font-size: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 999999px;
+  }
+  h2 {
+    color: #0e435c;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1em;
+  }
+  ul {
+    color: #0e435c;
+    font-size: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-height: 999999px;
+  }
 }
 body {
   background-color: #C9FBE8;
@@ -73,25 +112,25 @@ h1 {
   padding-left: 20px;
   padding-right: 20px;
 }
-h2 {
+\*h2 {
   color: #0e435c;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 1em;
-}
+}*\
 h3 {
   color: #C9FBE8
   padding-left: 20px;
   padding-right: 20px;
   font-size: 2em;
 }
-p {
+\*p {
   color: #0e435c;
   font-size: 1em;
   padding-left: 20px;
   padding-right: 20px;
   max-height: 999999px;
-}
+}*\
 .TableTitle {
   color: #0e435c;
   font-size: 0.5cm;
@@ -114,9 +153,13 @@ p {
   overflow: hidden; 
   object-position: 50% 100%;
 }
-ul {
+/*ul {
   color: #0e435c;
-}
+  font-size: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-height: 999999px;
+}*/
 .accordion {
   background-color: #0e435c;
   color: #C9FBE8;
