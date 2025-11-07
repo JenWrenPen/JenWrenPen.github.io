@@ -27,7 +27,7 @@
   border: none;
   border-top: none;
   width: 90%;
-  text-align: justify;
+  text-align: center;
   font-size: 2em;
   color: #0e435c;
 }
@@ -44,6 +44,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  justify-content: center;
 }
 .gallery li{
   width: 100%;
@@ -53,9 +54,6 @@
   margin-top: 4vw;
   vertical-align: middle;
   width: 100%;
-}
-ul {
-  justify-content: center;
 }
 
 /***** Laptops & Desktops *****/
