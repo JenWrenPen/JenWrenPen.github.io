@@ -1,32 +1,59 @@
 /***** Mobile *****/
-.subskills-content {
-  display: none;
-  position: absolute;
-  background-color: #b2e4d7;
-  width: 90%;
-  z-index: 1;
-  /*display: relative;*/
-  margin: auto;
-  /*horizontal-align: middle;*/
-  left: 0;
-  right: 0;
+.tab {
+  overflow: hidden;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin: 0;
 }
+.tab button {
+  background-color: #C9FBE8;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.3s;
+}
+.tab button:hover {
+  background-color: #9acdc5;
+}
+.tab button.active {
+  background-color: #6c9fa2;
+}
+.tabcontent {
+  display: none;
+  border: none;
+  border-top: none;
+  width: 100%;
+  text-align: center;
+  color: #0e435c;
+}
+.tabcontent p {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 4vw;
+}
+
 .accordion {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-  /*margin: auto;*/
-  /*horizontal-align: middle;*/
-  /*display: inline-block;*/
   position: relative;
   display: block;
+  font-size: 10px;
 }
 p {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 20;
-  text-align: justify;
+  font-size: 14px;
+  text-align: left;
 }
 h2 {
   width: 90%;
@@ -37,37 +64,118 @@ h2 {
 .panel {
   width: 90%;
 }
+.panel p {
+  font-size: 14;
+  text-align: center;
+}
+#employment td{
+  border: none;
+  text-align: left;
+  padding: 8px;
+  color: #0e435c;
+  font-size: 10px;
+}
+
+#education td {
+  border: none;
+  text-align: left;
+  padding: 8px;
+  color: #0e435c;
+  font-size: 10px;
+}
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 10px;
+  color: #C9FBE8;
+  float: right;
+  border: none;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "−"; /* Unicode character for "minus" sign (-) */
+  font-size: 10px;
+  float: right;
+  border: none;
+  margin-left: 5px;
+}
+button.accordion.active {
+  font-size: 10px;
+}
+button.accordion:hover {
+  font-size: 10px;
+}
+.PCcontainer {
+  display: none;
+}
+.mobcontainer {
+  display: block;
+  margin: auto;
+  widthL 100%;
+}
+
 /***** Laptops & Desktops *****/
 @media only screen and (min-width: 992px) {
-  .subskills-content {
+  .tab {
+    overflow: hidden;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+  .tab button {
+    background-color: #C9FBE8;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.3s;
+  }
+  .tab button:hover {
+    background-color: #9acdc5;
+  }
+  .tab button.active {
+    background-color: #6c9fa2;
+  }
+  .tabcontent {
     display: none;
-    position: absolute;
-    background-color: #b2e4d7;
+    padding: none;
+    border: none;
+    border-top: none;
     width: 800px;
-    z-index: 1;
-    /*display: relative;*/
     margin: auto;
-    /*horizontal-align: middle;*/
-    left: 0;
-    right: 0;
-}
+    text-align: justify;
+  }
+  .tabcontent p {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+  }
+
 .accordion {
   width: 800px;
   margin: auto;
-  /*horizontal-align: middle;*/
-  /*display: inline-block;*/
   position: relative;
   display: block;
+  font-size:0.9cm;
 }
 .panel {
   width: 800px;
+}
+.panel p {
+  width: 800px;
+  padding-left: 0;
+  padding-right:0;
 }
 p {
   margin:auto;
   font-size: 1em;
   width: 800px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
+  text-align: justify;
 }
 h2 {
   margin:auto;
@@ -76,91 +184,50 @@ h2 {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-}
-#employment p {
-  padding-left: 0;
-  padding-right: 0;
-}
 #employment td{
   border: none;
+  text-align: justify;
   padding: 8px;
-    color: #0e435c;
+  color: #0e435c;
+  font-size: 16px;
 }
 
 #education td {
   border: none;
+  text-align: justify;
   padding: 8px;
-    color: #0e435c;
-}
-.skillsbar {
-  position: absolute;
-  overflow: hidden;
-  background-color: #C9FBE8;
-}
-
-
-.skillsbar a {
-  float: center;
-  /*font-size: 16px;*/
   color: #0e435c;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
+  font-size: 16px;
 }
-
-.subskills {
-  position: center;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.subskills .subskillsbtn {
-  /*font-size: 16px;*/
-  border: none;
-  outline: none;
-  color: #0e435c;
-  padding: none;
-  background-color: inherit;
-  font-family: inherit;
-  margin: none;
-  transition: 0.4s;
-  display: flex;
-  justify-content: center;
-}
-
-
-.skillsbar a:hover, .subskills:hover .subskillsbtn {
-  background-color: #0e435c;
+.accordion:after {
+  content: '+'; /* Unicode character for "plus" sign (+) */
+  font-size: 0.9cm;
   color: #C9FBE8;
+  float: right;
+  border: none;
+  margin-left: 5px;
 }
 
-/*.subskills-content {
-  display: none;
-  position: absolute;
-  background-color: #b2e4d7;
-  width: 600px;
-  z-index: 1;
-  /*display: relative;*/
-  margin: auto;
-  /*horizontal-align: middle;*/
-  left: 0;
-  right: 0;
-}*/
-
-.subskills-content a {
-  float: left;
-  color: #0e435c;
-  text-decoration: none;
-  text-align: center;
+.accordion.active:after {
+  content: "−"; /* Unicode character for "minus" sign (-) */
+  font-size: 0.9cm;
+  float: right;
+  border: none;
+  margin-left: 5px;
 }
-
-.subskills-content a:hover {
-  background-color: #C9FBE8;
-  color: #0e435c;
+button.accordion.active {
+  font-size: 0.9cm;
 }
+button.accordion:hover {
+  font-size: 0.9cm;
+}
+.mobcontainer {
+    display: none;
+  }
+.PCcontainer {
+    display: inline;
+  }
 
-.subskills:hover .subskills-content {
-  display: block;
 }
 
 .imgBoxIT {
@@ -206,10 +273,14 @@ h2 {
   background: url('mischover.png') no-repeat;
 }
 
+#employment p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #skills table {
-  margin-left: auto;
-  margin-right: auto;
-  width:  100%;/*600px;*/
+  margin:0;
+  width:  100%;
 }
 
 #skills td, th {
@@ -217,10 +288,6 @@ h2 {
   padding: 8px;
   color: #0e435c;
   text-align: center;
-}
-
-#skills tr:hover {
-  background-color: #b2e4d7;
 }
 
 #skills th {
@@ -236,44 +303,8 @@ body {
     overflow-x:hidden;
   margin-bottom: 200px;
 }
-\*p {
-  width: 800px;
-  margin: auto;
-  text-align: justify;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}*\
-\*h2 {
-  width: 800px;
-  margin: auto;
-  margin-top: 20px;
-}*\
-/*.accordion {
-  width: 600px;
-  margin: auto;
-  /*horizontal-align: middle;*/
-  /*display: inline-block;*/
-  position: relative;
-  display: block;
-}*/
-.accordion:after {
-  content: '+'; /* Unicode character for "plus" sign (+) */
-  font-size: 0.9cm;
-  color: #C9FBE8;
-  float: right;
-  border: none;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "-"; /* Unicode character for "minus" sign (-) */
-  font-size: 0.9cm;
-  float: right;
-  border: none;
-  margin-left: 5px;
-}
 #QualInt table {
-  width: 100%;/*600px;*/
+  width: 100%;
     left: 0;
     right: 0;
 }
