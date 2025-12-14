@@ -5,10 +5,6 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="creative.css">
 </head>
-<style>
-  p { font-size: 1em; }
-  h1 { font-size: 1.5em; }
-</style>
 <body>
 <nav class="nav">
  <ul class="nav">
@@ -43,6 +39,12 @@
       <img src="sewhover.png" class="hover-top">
     </div>
   </button>
+  <button class="tablinks" onclick="openArt(event, 'Lego')">
+    <div class="hoverable">
+      <img src="lego.png">
+      <img src="legohover.png" class="hover-top">
+    </div>
+  </button>
   <button class="tablinks" onclick="openArt(event, 'Misc')">
     <div class="hoverable">
       <img src="miscart.png">
@@ -61,31 +63,31 @@
       <img src="PaintAndPens/DH.gif" class="hover-top">
     </div></li>
     <li><img src="PaintAndPens/Cactus_Line.jpg">
+    <li><img src="PaintAndPens/Miniature_Cathedral.jpg"></li>
+    <li><img src="PaintAndPens/Toad_Bag.jpg"></li>
+    <li><img src="PaintAndPens/Terrible_SelfPortrait.jpg"></li>
     <li><div class="hoverable">
       <img src="PaintAndPens/Annecy_France.jpg">
       <img src="PaintAndPens/AF.gif" class="hover-top">
     </div></li>
-    <li><img src="PaintAndPens/Miniature_Cathedral.jpg"></li>
-    <li><img src="PaintAndPens/Toad_Bag.jpg"></li>
-    <li><div class="hoverable">
-      <img src="PaintAndPens/Improved_RobotBear.jpg">
-      <img src="PaintAndPens/IR.gif" class="hover-top">
-    </div></li>
-    <li><img src="PaintAndPens/Terrible_SelfPortrait.jpg"></li>
     <li><div class="hoverable">
       <img src="PaintAndPens/Miniature_GullGang.jpg">
       <img src="PaintAndPens/MG.gif" class="hover-top">
     </div></li>
-    <li><img src="PaintAndPens/Miniature_Elephant.jpg"></li>
-    <li><img src="PaintAndPens/Snoehetta_Twighlight.jpg"></li>
     <li><div class="hoverable">
-      <img src="PaintAndPens/Flowery_Crown.jpg">
-      <img src="PaintAndPens/FC.gif" class="hover-top">
+      <img src="PaintAndPens/Improved_RobotBear.jpg">
+      <img src="PaintAndPens/IR.gif" class="hover-top">
     </div></li>
+    <li><img src="PaintAndPens/Miniature_Elephant.jpg"></li>
     <li><div class="hoverable">
       <img src="PaintAndPens/Dis_ney_topia.jpg">
       <img src="PaintAndPens/DT.gif" class="hover-top">
     </div></li>
+    <li><div class="hoverable">
+      <img src="PaintAndPens/Flowery_Crown.jpg">
+      <img src="PaintAndPens/FC.gif" class="hover-top">
+    </div></li>
+    <li><img src="PaintAndPens/Snoehetta_Twighlight.jpg"></li>
     <li><img src="PaintAndPens/Foggy_Bridge.jpg"></li>
     <li><div class="hoverable">
       <img src="PaintAndPens/Handsome_Man.jpg">
@@ -114,41 +116,54 @@
       <img src="SewnCreations/CS.gif" class="hover-top">
     </div>
     <img src="SewnCreations/Cat_Apron.jpg">
-    <img src="SewnCreations/DogCollar_Bow.jpg">
-    <img src="SewnCreations/Landscapron.jpg">
-    <div class="hoverable">
-      <img src="SewnCreations/Chalk_Bag.jpg">
-      <img src="SewnCreations/CB.gif" class="hover-top">
-    </div>
     <img src="SewnCreations/Stegasaurus_Toy.jpg">
-    <img src="SewnCreations/Monument_Valley.jpg">
-    <img src="SewnCreations/DiceBag_Tray.jpg">
     <div class="hoverable">
       <img src="SewnCreations/Bunny_Stop.jpg">
       <img src="SewnCreations/BS.gif" class="hover-top">
     </div>
+    <img src="SewnCreations/DogCollar_Bow.jpg">
+    <div class="hoverable">
+      <img src="SewnCreations/Chalk_Bag.jpg">
+      <img src="SewnCreations/CB.gif" class="hover-top">
+    </div>
+    <img src="SewnCreations/Monument_Valley.jpg">
+    <img src="SewnCreations/Landscapron.jpg">
+    <img src="SewnCreations/DiceBag_Tray.jpg">
+  </ul>
+  </div>
+</div>
+
+<div id="Lego" class="tabcontent">
+<p><b>LEGO &trade; Creations</b>
+<br/>A hobby that has followed me into adulthood and professional life. I enjoy designing models on <a href="https://www.bricklink.com/v3/studio/download.page">Bricklink.com's Studio</a> software and ordering the pieces to create gifts for friends and tangible scientific models for outreach purposes.</p>
+  <div class="gallery">
+  <ul>
+    <img src="LegoDesigns/LargeCommensurabilityModel.png">
+    <img src="LegoDesigns/ModelHouse.png">
+    <img src="LegoDesigns/VariousJackys.png">
+    <img src="LegoDesigns/JackySkinnyLegs.jpg">
+    <img src="LegoDesigns/ChronicMyeloidLeukaemiaSystem.png">
   </ul>
   </div>
 </div>
 
 <div id="Misc" class="tabcontent">
 <p><b>Miscellaneous Work</b>
-<br/>Here you can find one-off projects I have completed that don't conform to the other categories.</p>
+<br/>Here you can find projects I have completed that don't conform to the other, more populous, categories.</p>
   <div class="gallery">
   <ul>
     <img src="MiscArt/Sinking_Feeling.jpg">
     <img src="MiscArt/Pyrography_Cheeseboard.jpg">
     <img src="MiscArt/Meat_Card.jpg">
-    <img src="MiscArt/Cactus_Sunset.jpg">
     <div class="hoverable">
       <img src="MiscArt/Bird_Boyz.jpg">
       <img src="MiscArt/BB.gif" class="hover-top">
     </div>
-    <img src="MiscArt/Pyrography_Tray.jpg">
-    <img src="MiscArt/Terrifying_Bear.jpg">
+    <img src="MiscArt/Cactus_Sunset.jpg">
     <img src="MiscArt/Pyrography_Stand.jpg">
-    <img src="MiscArt/Halloween_Cupcakes.jpg">
+    <img src="MiscArt/Pyrography_Tray.jpg">
     <img src="MiscArt/Christmas_Arrangement.jpg">
+    <img src="MiscArt/Halloween_Cupcakes.jpg">
   </ul>
   </div>
 </div>
