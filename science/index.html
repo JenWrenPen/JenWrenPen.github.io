@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+ <title>Science</title>
+ 
+ <link rel="stylesheet" href="http://localhost:1313/sass/main.min.css">
+ 
+ <link rel="icon" type="image/ico" href="/images/favicon.ico">
+</head>
+
+<body>
+ 
+  <div class="navbar">
+    <div class="navlinks">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/creative/">Creative</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/science/">Science</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobnavbar">
+    <div class="dropdown">
+      <button onclick="DropNav()" class="dropbtn">
+  <img src="/images/mob_nav_dots.png"></button>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+      <div class="navlinks">
+        <ul>
+          <li style="text-align: right;"><button onclick="CloseNav()" class="closebtn"><img src="/images/mob_nav_cross.png"></button></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/creative/">Creative</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <li style="padding-bottom: 60px;"><a href="/science/">Science</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+function DropNav() {
+  document.getElementById("myDropdown").style.display = 'block';
+}
+function CloseNav() {
+  document.getElementById("myDropdown").style.display = 'none';
+}
+
+</script>
+
+
+ 
+ <style>
+  p, h1, h2, ul {
+    width: 900px;
+    margin: 20px auto;
+  }
+
+   
+  #pubs li {
+    padding-bottom: 20px;
+    font-size: 36px;
+  }
+
+   
+
+  @media only screen and (min-width: 992px) {
+
+    #pubs li {
+      padding-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+
+</style>
+<h1>Scientific Research and Publications</h1>
+<p>After completing a master's degree in the instrumentation and modelling of the measurement of nuclear radiation, I went on to complete and defend a PhD. My doctoral work spanned two projects: thermal effects on the frictional properties of layered materials and modelling drug resistance in chronic myeloid leukaemia treatment. If you have any questions or wish to collaborate, you can contact me at <a href = "mailto: science@jennifer.sh">science@jennifer.sh</a>.</p>
+<h2>Doctoral thesis</h2>
+<p><a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3192450" target="_blank"><b>Decay Behaviour, State Transitions and Escape Rates in Simple Models for Complex Systems</b></a><br/>Jennifer Sheehan<br/><i>Approved 11 April 2025 – Defended 23 May 2025</i><br/></p>
+<h2>Publications</h2>
+<ul id="pubs">
+  <li><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.195441" target="_blank"><b>Thermal effects and spontaneous frictional relaxation in atomically thin layered materials</b></a><br/>J. Roadnight Sheehan, David Andersson, and Astrid S. de Wijn<br/><i>Phys. Rev. B 103, 195441 – Published 27 May 2021</i><br/></li>
+  <li><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012570" target="_blank"><b>Beyond IC50—A computational dynamic model of drug resistance in enzyme inhibition treatment</b></a><br/>J. Roadnight Sheehan, Astrid S. de Wijn, Thales Souza Freire, and Ran Friedman<br/><i>PLoS Comput Biol 20(11): e1012570 – Published 7 November 2024</i></li>
+  <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/pro.70219" target="_blank"><b>A computational dynamic model of combination treatment for type II inhibitors with asciminib</b></a><br/>J. Roadnight Sheehan, Astrid S. de Wijn, and Ran Friedman<br/><i>Protein Sci. 34(8): e70219 – Published 17 July 2025</i></li>
+</ul>
+
+
+ 
+ <footer>
+   Website last updated by Jennifer Sheehan in March 2026.
+ </footer>
+
+</body>
+</html>

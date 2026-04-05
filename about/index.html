@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+ <title>About</title>
+ 
+ <link rel="stylesheet" href="http://localhost:1313/sass/main.min.css">
+ 
+ <link rel="icon" type="image/ico" href="/images/favicon.ico">
+</head>
+
+<body>
+ 
+  <div class="navbar">
+    <div class="navlinks">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/creative/">Creative</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/science/">Science</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobnavbar">
+    <div class="dropdown">
+      <button onclick="DropNav()" class="dropbtn">
+  <img src="/images/mob_nav_dots.png"></button>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+      <div class="navlinks">
+        <ul>
+          <li style="text-align: right;"><button onclick="CloseNav()" class="closebtn"><img src="/images/mob_nav_cross.png"></button></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/creative/">Creative</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <li style="padding-bottom: 60px;"><a href="/science/">Science</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+function DropNav() {
+  document.getElementById("myDropdown").style.display = 'block';
+}
+function CloseNav() {
+  document.getElementById("myDropdown").style.display = 'none';
+}
+
+</script>
+
+
+ 
+ <style>
+
+   
+
+  h3 {
+    padding: 0 40px;
+    font-style: italic;
+    text-align: center;
+  }
+
+   
+
+  .textbox {
+    width: 100%;
+    float: none;
+  }
+
+  .picbox {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  .defenceImage {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+  }
+  
+   
+
+  @media only screen and (min-width: 992px) {
+
+    h3 {
+      padding: 0 40px;
+      font-style: italic;
+      text-align: center;
+    }
+ 
+    .textbox {
+      width: 70%;
+      float: left;
+    }
+
+    .picbox {
+      width: calc(30% - 40px);
+      float: left;
+      padding: 20px 20px;
+    }
+
+    .defenceImage {
+      display: block;
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="textbox">
+  <h1>About me!</h1>
+  <p>Hi, I'm Jennifer.Sh. Self-described Jen-of-all-trades.</p>
+  <h3>"A jack of all trades is a master of none, but often times better than a master of one."</h3>
+  <p>My background in teaching science, mathematics, electronics and IT gave me a great foundation for working with interdisciplinary subjects during my PhD, which I successfully defended in May 2025. During my doctoral work, I applied the mathematics of decay behaviour and state transitions to build simple models of complex systems. I studied drug resistance in cancer treatment and thermal effects in nanoscale frictional phenomena.</p>
+
+  <p>Outside of academia, I thrive when being creative and I regularly spend time sewing and painting. I love trying new crafts and taking a project from the initial spark of an idea; through all the planning and resource gathering; to the hard graft to complete the final piece. I also bring my creative side into my academic work to problem-solve and present data and information in clear and engaging ways.</p>
+
+  <p>I started this website as a fun way to exercise and develop my old MySpace html skills and learn CSS, but I decided to upgrade this project to be an extension to my CV and show off my creative projects!</p>
+</div>
+
+<div class="picbox">
+  
+  <img src="/images/Defence.png" class="defenceImage">
+</div>
+
+
+ 
+ <footer>
+   Website last updated by Jennifer Sheehan in March 2026.
+ </footer>
+
+</body>
+</html>

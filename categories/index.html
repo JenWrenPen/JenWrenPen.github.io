@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+ <title>Categories</title>
+ 
+ <link rel="stylesheet" href="http://localhost:1313/sass/main.min.css">
+ 
+ <link rel="icon" type="image/ico" href="/images/favicon.ico">
+</head>
+
+<body>
+ 
+  <div class="navbar">
+    <div class="navlinks">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/creative/">Creative</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/science/">Science</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobnavbar">
+    <div class="dropdown">
+      <button onclick="DropNav()" class="dropbtn">
+  <img src="/images/mob_nav_dots.png"></button>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+      <div class="navlinks">
+        <ul>
+          <li style="text-align: right;"><button onclick="CloseNav()" class="closebtn"><img src="/images/mob_nav_cross.png"></button></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/creative/">Creative</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <li style="padding-bottom: 60px;"><a href="/science/">Science</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+function DropNav() {
+  document.getElementById("myDropdown").style.display = 'block';
+}
+function CloseNav() {
+  document.getElementById("myDropdown").style.display = 'none';
+}
+
+</script>
+
+
+ 
+ 
+
+ 
+ <footer>
+   Website last updated by Jennifer Sheehan in March 2026.
+ </footer>
+
+</body>
+</html>

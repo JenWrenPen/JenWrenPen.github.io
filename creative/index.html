@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+ <title>Creative</title>
+ 
+ <link rel="stylesheet" href="http://localhost:1313/sass/main.min.css">
+ 
+ <link rel="icon" type="image/ico" href="/images/favicon.ico">
+</head>
+
+<body>
+ 
+  <div class="navbar">
+    <div class="navlinks">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/creative/">Creative</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/science/">Science</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobnavbar">
+    <div class="dropdown">
+      <button onclick="DropNav()" class="dropbtn">
+  <img src="/images/mob_nav_dots.png"></button>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+      <div class="navlinks">
+        <ul>
+          <li style="text-align: right;"><button onclick="CloseNav()" class="closebtn"><img src="/images/mob_nav_cross.png"></button></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/creative/">Creative</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <li style="padding-bottom: 60px;"><a href="/science/">Science</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+function DropNav() {
+  document.getElementById("myDropdown").style.display = 'block';
+}
+function CloseNav() {
+  document.getElementById("myDropdown").style.display = 'none';
+}
+
+</script>
+
+
+ 
+ <p>
+<script src="/scripts/tabs.js"></script>
+<style>
+ 
+  .tab {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border: none;
+    background-color: none;
+  }
+
+ 
+  .tab button {
+    width: 25%;
+    background-color: #8EE691;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+ 
+  .tab button:hover {
+    background-color: #6FB371;
+    color: #EEE;
+  }
+
+ 
+  .tab button.active {
+    background-color: #7ECC81;
+  }
+
+ 
+  .tabcontent {
+    background-color: #7ECC81;
+    display: none;
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    border: none;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+</style>
+<style>
+   
+  
+  .gallery {
+    height: auto;
+  }
+
+  .gallery li{
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+  }
+
+  .gallery ul {
+    column-count: 4;
+    padding: 0 20px;
+    margin: 20px 0;
+    height: auto;
+    text-align: center;
+  }
+  
+  .gallery img{
+    margin: 0;
+    margin-top: 16px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+
+   
+
+  .gallery ul {
+    column-count: 1;
+  }
+
+   
+
+  @media only screen and (min-width: 992px) {
+
+    .gallery ul {
+      column-count: 4;
+    }
+  }
+
+</style>
+<style>
+
+  .hoverable:hover .hover-top {
+    display: inline;
+  }
+
+  .gallery img.hover-top {
+    width: 100%;
+  }
+
+   
+
+  .tabimage {
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+  }
+
+  .hoverable {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+  }
+  .hoverable .hover-top {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+   
+
+  @media only screen and (min-width: 992px) {
+
+    .tabimage {
+      width: 20vw;
+      max-width: 250px;
+      margin: auto;
+    }
+
+    .hoverable:hover .hover-top {
+      display: inline;
+    }
+    .gallery img.hover-top {
+      width: 100%;
+    }
+
+    .tabimage {
+      width: 20vw;
+      max-width: 250px;
+      margin: auto;
+    }
+  
+    .hoverable {
+      width: 20vw;
+      max-width: 250px;
+      height: auto;
+      position: relative;
+      display: inline-block;
+      margin: 0;
+    }
+
+    .hoverable .hover-top {
+      width: 20vw;
+      max-width: 250px;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+  }
+</style>
+
+<h1>Creative projects</h1>
+<p>Peruse a sample of my artistic outputs using different media.</p>
+
+
+
+
+
+
+
+
+
+
+<div class="tab">
+  <button class="tablinks active" onclick="openCategory(event, 'Paints&Pens')" style="width:25%;">
+    <div class="hoverable">
+      <img src="/images/paint.png" class="tabimage">
+      <img src="/images/painthover.png" class="hover-top">
+    </div>
+  </button>
+  <button class="tablinks" onclick="openCategory(event, 'Sewing')" style="width:25%;">
+    <div class="hoverable">
+      <img src="/images/sew.png" class="tabimage">
+      <img src="/images/sewhover.png" class="hover-top">
+    </div>
+  </button>
+  <button class="tablinks" onclick="openCategory(event, 'Lego')" style="width:25%;">
+    <div class="hoverable">
+      <img src="/images/lego.png" class="tabimage">
+      <img src="/images/legohover.png" class="hover-top">
+    </div>
+  </button>
+  <button class="tablinks" onclick="openCategory(event, 'Misc')" style="width:25%;">
+    <div class="hoverable">
+      <img src="/images/miscart.png" class="tabimage">
+      <img src="/images/miscarthover.png" class="hover-top">
+    </div>
+  </button>
+</div>
+  
+<div id="Paints&Pens" class="tabcontent" style="display:block">
+  <h2>Paint & Pens</h2>
+  <p>Doodling and sketching have been my favourite boredom-busters for as long as I can remember. When I was about 12 years old, my art teacher introduced me to acrylic paints - they quickly became my favourite. Since then, I casually produce art as gifts using either paints or marker pens. My favourite pieces to make are miniature works that are only a few inches wide and "improvements" to secondhand artworks.</p>
+  <div class="gallery">
+    <ul>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/PaintAndPens/Spaniel.jpg">
+        <img src="/images/PaintAndPens/Spaniel.gif" class="hover-top">
+      </div></li> 
+      <li><img src="/images/PaintAndPens/Miniature_Cathedral.jpg"></li>
+      <li><img src="/images/PaintAndPens/Snoehetta_Twighlight.jpg"></li>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/PaintAndPens/Annency_France.jpg">
+        <img src="/images/PaintAndPens/Annency_France.gif" class="hover-top">
+      </div></li>
+      <li><img src="/images/PaintAndPens/Improved_Octopus.jpg"></li>
+      <li><img src="/images/PaintAndPens/Rocket_Egg.jpg"></li>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/PaintAndPens/Flower_Crown.jpg">
+        <img src="/images/PaintAndPens/Flower_Crown.gif" class="hover-top">
+      </div></li>
+      <li><img src="/images/PaintAndPens/Improved_Dragons.jpg"></li>
+      <li><img src="/images/PaintAndPens/Terrible_SelfPortrait.jpg"></li>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/PaintAndPens/Kea_Flight.jpg">
+        <img src="/images/PaintAndPens/Kea_Flight.gif" class="hover-top">
+      </div></li>
+      <li><img src="/images/PaintAndPens/Cactus_Line.jpg"></li>
+      <li><img src="/images/PaintAndPens/Toad_Bag.jpg"></li>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/PaintAndPens/Handsome_Man.jpg">
+        <img src="/images/PaintAndPens/Handsome_Man.gif" class="hover-top">
+      </div></li>
+      <li><img src="/images/PaintAndPens/Miniature_Elephant.jpg"></li>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/PaintAndPens/Miniature_GullGang.jpg">
+        <img src="/images/PaintAndPens/Miniature_GullGang.gif" class="hover-top">
+      </div></li>
+    </ul>
+  </div>
+</div>
+
+<div id="Sewing" class="tabcontent">
+  <h2>Sewing projects</h2>
+  <p>Most of my sewing skills are put towards fixing or tailoring clothes, but occasionally I will feel insprired to make something special.</p>
+  <div class="gallery">
+    <ul>
+      <li><img src="/images/SewnCreations/Cat_Apron.jpg"></li>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/SewnCreations/Chalk_Bag.jpg">
+        <img src="/images/SewnCreations/Chalk_Bag.gif" class="hover-top">
+      </div></li>
+      <li><img src="/images/SewnCreations/DiceBag_Tray.jpg"></li>
+      <li><img src="/images/SewnCreations/DogCollar_Bow.jpg"></li>
+      <li><img src="/images/SewnCreations/Landscapron.jpg"></li>
+      <li><img src="/images/SewnCreations/Monument_Valley.jpg"></li>
+      <li><img src="/images/SewnCreations/Stegasaurus_Toy.jpg"></li>
+    </ul>
+  </div>
+</div>
+
+<div id="Lego" class="tabcontent">
+  <h2>LEGO™ designs</h2>
+  <p>I've designing LEGO™ builds digitally for a couple of decades, and recently I've extended these skills into scientific models for demonstration.</p>
+  <div class="gallery">
+    <ul>
+      <li><img src="/images/LegoDesigns/ChronicMyeloidLeukaemiaSystem.png"></li>
+      <li><img src="/images/LegoDesigns/JackySkinnyLegs.jpg"></li>
+      <li><img src="/images/LegoDesigns/LargeCommensurabilityModel.png"></li>
+      <li><img src="/images/LegoDesigns/ModelHouse.png"></li>
+      <li><img src="/images/LegoDesigns/VariousJackys.png"></li>
+    </ul>
+  </div>
+</div>
+
+<div id="Misc" class="tabcontent">
+  <h2>Miscellaneous</h2>
+  <p>Other works that are currently uncategorised.</p>
+  <div class="gallery">
+    <ul>
+      <li><div class="hoverable">
+        
+        
+        <img src="/images/MiscArt/Bird_Boyz.jpg">
+        <img src="/images/MiscArt/Bird_Boyz.gif" class="hover-top">
+      </div></li>
+      <li><img src="/images/MiscArt/Pyrography_Cheeseboard.jpg"></li>
+      <li><img src="/images/MiscArt/Sinking_Feeling.jpg"></li>
+      <li><img src="/images/MiscArt/Pyrography_Stand.jpg"></li>
+      <li><img src="/images/MiscArt/Meat_Card.jpg"></li>
+      <li><img src="/images/MiscArt/Cactus_Sunset.jpg"></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function openCategory(evt, catName) {
+    
+    var i, tabcontent, tablinks;
+
+    
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    
+    document.getElementById(catName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+</p>
+
+
+ 
+ <footer>
+   Website last updated by Jennifer Sheehan in March 2026.
+ </footer>
+
+</body>
+</html>

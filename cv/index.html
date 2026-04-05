@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+ <title>CV</title>
+ 
+ <link rel="stylesheet" href="http://localhost:1313/sass/main.min.css">
+ 
+ <link rel="icon" type="image/ico" href="/images/favicon.ico">
+</head>
+
+<body>
+ 
+  <div class="navbar">
+    <div class="navlinks">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/creative/">Creative</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/science/">Science</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobnavbar">
+    <div class="dropdown">
+      <button onclick="DropNav()" class="dropbtn">
+  <img src="/images/mob_nav_dots.png"></button>
+    </div>
+    <div id="myDropdown" class="dropdown-content">
+      <div class="navlinks">
+        <ul>
+          <li style="text-align: right;"><button onclick="CloseNav()" class="closebtn"><img src="/images/mob_nav_cross.png"></button></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/creative/">Creative</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <li style="padding-bottom: 60px;"><a href="/science/">Science</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+function DropNav() {
+  document.getElementById("myDropdown").style.display = 'block';
+}
+function CloseNav() {
+  document.getElementById("myDropdown").style.display = 'none';
+}
+
+</script>
+
+
+ 
+ <p><style>
+
+   
+
+  .accordion {
+    width: 900px;
+    margin: 20px auto;
+    position: relative;
+    display: block;
+    background-color: #7ECC81;
+    color: #111;
+    border: none;
+    padding: 20px 0;
+    vertical-align: middle;
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+  .active, .accordion:hover {
+    background-color: #6FB371;
+    color: #EEE;
+    font-size: 28px;
+  }
+
+  .panel {
+    width: 900px;
+    margin: auto;
+    padding: 0;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion:after {
+    content: '+';
+    color: #111;
+    float: right;
+    padding-right:20px;
+    border: none;
+    margin: 0;
+  }
+
+  .accordion.active:after {
+    content: "−";
+    color: #EEE;
+    float: right;
+    padding-right:20px;
+    border: none;
+    margin: 0;
+  }
+
+   
+
+  .accordion {
+    font-size: 36px;
+  }
+
+  .accordion:after {
+    font-size: 36px;
+  }
+
+  .accordion.active:after {
+    font-size: 36px;
+  }
+
+  button.accordion.active {
+    font-size: 36px;
+  }
+  
+  button.accordion:hover {
+    font-size: 36px;
+  }
+
+
+   
+  
+  @media only screen and (min-width: 992px) {
+
+    .accordion {
+      font-size: 28px;
+    }
+
+    .accordion:after {
+      font-size: 28px;
+    }
+
+    .accordion.after:active {
+      font-size: 28px;
+    }
+
+    button.accordion.active {
+      font-size: 28px;
+    }
+  
+    button.accordion:hover {
+      font-size: 28px;
+    }
+
+  }
+
+</style>
+
+
+<script src="/scripts/tabs.js"></script>
+<style>
+ 
+  .tab {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border: none;
+    background-color: none;
+  }
+
+ 
+  .tab button {
+    width: 25%;
+    background-color: #8EE691;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+ 
+  .tab button:hover {
+    background-color: #6FB371;
+    color: #EEE;
+  }
+
+ 
+  .tab button.active {
+    background-color: #7ECC81;
+  }
+
+ 
+  .tabcontent {
+    background-color: #7ECC81;
+    display: none;
+    width:100%;
+    height: auto;
+    padding: 20px 0;
+    border: none;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+</style>
+<style>
+  
+   
+
+  p {
+    width: 900px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    width: 900px;
+    margin: 20px auto;
+  }
+
+  #employment td{
+    border: none;
+    color: #111;
+  }
+
+  #education td {
+    border: none;
+    color: #111;
+  }
+ 
+  #IandH td {
+    border: none;
+    text-align: left;
+    vertical-align: top;
+    color: #111;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+
+ .tabimage {
+    margin: auto;
+  }
+  
+  .hoverable {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+  }
+  .hoverable .hover-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .tab button:hover .hover-top {
+    display: inline;
+  }
+
+  .tab button:hover .tabimage {
+    opacity: 0.01;
+  }
+
+  .tab button.active .hover-top {
+    display: inline;
+  }
+
+  .tab button.active .tabimage {
+    opacity: 0.01;
+  }
+
+  .tab {
+    width: 892px;
+    margin: auto;
+  }
+
+  .tabcontent {
+    width: 892px;
+    margin: auto;
+  }
+
+  .dateto {
+    vertical-align: bottom; 
+    text-align: center;
+  }
+
+  .PQs {
+    color: #111;
+  }
+
+  .PQs li{
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+  }
+
+  .PQs ul {
+    padding: 0 20px;
+    margin: 20px 0;
+    height: auto;
+    text-align: center;
+  }
+
+
+   
+
+  h3 {
+    font-size: 36px;
+  }
+
+  #employment td.dateto {
+    padding: 16px 0;
+  }
+
+  #employment td{
+    font-size: 32px;
+    text-align: left;
+    padding: 16px;
+  }
+
+  #education td {
+    text-align: left;
+    padding: 16px;
+    font-size: 32px;
+  }
+  
+  .asterixtext {
+    padding: 16px; 
+    font-size: 24px;"
+  }
+
+  .tab button {
+    font-size: 2.5vw;
+  }
+
+  #skills {
+    display: none;
+  }
+
+  #skills_mob {
+    display: block;
+  }
+
+  #skills_mob td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+    color: #111;
+    font-size: 32px;
+  }
+
+  .PQs ul {
+    column-count: 3;
+    font-size: 32px;
+  }
+
+  .PQs li {
+    padding: 10px 0;
+  }
+
+  #IandH td {
+    padding: 0 20px;
+    font-size: 32px;
+  }
+
+  /***** PC *****/
+  
+  @media only screen and (min-width: 992px) {
+
+    h3 {
+      font-size: 17px;
+    }
+
+    #employment td.dateto {
+      padding: 8px 0;
+    }
+
+    #employment td{
+      font-size: 16px;
+      text-align: justify;
+      padding: 8px;
+    }
+
+    #education td {
+      text-align: justify;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .asterixtext {
+      padding: 8px; 
+      font-size: 12px;"
+    }
+
+    .tab button {
+      font-size: 20px;
+    }
+
+    #skills {
+      display: block;
+    }
+
+    #skills td {
+      border: none;
+      text-align: left;
+      padding: 8px;
+      color: #111;
+      font-size: 16px;
+    }
+
+    #skills_mob {
+      display: none;
+    }
+
+    .PQs ul {
+      column-count: 5;
+      font-size: 20px;
+    }
+
+    .PQs li {
+      padding: 10px 0;
+    }
+
+    #IandH td {
+      padding: 0 20px;
+      font-size: 20px;
+    }
+  }
+</style>
+
+<h1>CV</h1>
+<p>I am currently looking for my next employemnt opportunity. My varied career demonstrates highly useful interdisciplinary scientific skills and knowledge; and a set of interpersonal and organisational skills that are applicable for many types of work. I have experience designing and building computational models; analysing and presenting data; and writing scientific reports. Being able to adapt my knowledge and skills to new situations with steep learning curves makes me suitable for work across many disciplines. The breadth of my knowledge coupled with my creativity enables me to produce innovative solutions to problems.</p>
+
+<button class="accordion">Employment history</button>
+<div class="panel">
+  <table id="employment">
+    <colgroup>
+      <col span="1" style="width: 9.1%;">
+      <col span="1" style="width: 0.8%;">
+      <col span="1" style="width: 9.1%;">
+      <col span="1" style="width: 81%;">
+    </colgroup>
+    <tr>
+      <td colspan="3" style="text-align: left; vertical-align: top;"><h3>Noregs teknisk-naturvitenskapelige universitet</h3>(NTNU, Trondheim)</td>
+      <td rowspan="2" style="vertical-align: top;"><h3>Researcher (with Responsibility for Outreach)</h3><br>Carried our website maintenance and held responsibility for creating and collating outreach materials for an EU-funded project called "Scaling-up SuperLubricity into Persistence" (or <a href="https://www.sslip.eu/">SSLiP</a>). I designed many outreach materials including print media (e.g. posters and leaflets) for a range of audiences and LEGO&trade; models that demonstrate tribological phenomena in a tangible way.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: bottom; text-align: left;">Sep 2025</td>
+      <td class="dateto">to</td>
+      <td style="vertical-align: bottom; text-align: right;">Jan 2026</td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align: left; vertical-align: top;"><h3>The Studio School</h3>(Liverpool)</td>
+      <td rowspan="2" style="vertical-align: top;"><h3>Teacher</h3><br>Preparing and delivering practical and theoretical lessons to students aged 13-19 in A-Level and GCSE physics, GCSE chemistry and BTEC electronics. Also responsible for a year 13 tutor group and provided university references via UCAS for these students.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: bottom; text-align: left;">Sep 2016</td>
+      <td class="dateto">to</td>
+      <td style="vertical-align: bottom; text-align: right;">Aug 2017</td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align: left; vertical-align: top;"><h3>Teaching Personnel</h3>(Manchester)</td>
+      <td rowspan="2" style="vertical-align: top;"><h3>Cover teacher</h3><br>Assigned to a secondary school in the Greater Manchester area. Planned and provided Key Stage 3 and GCSE maths lessons for students aged 11-16 and supervised various cover lessons.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: bottom; text-align: left;">Apr 2016</td>
+      <td class="dateto">to</td>
+      <td style="vertical-align: bottom; text-align: right;">Jun 2016</td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align: left; vertical-align: top;"><h3>The Manchester College</h3>(Manchester)</td>
+      <td rowspan="2" style="vertical-align: top;"><h3>Tutor (19+)</h3><br>Teaching and planning learning modules, 3 hour lectures and exams for Access to Higher Education Diploma courses for adults aged 19+ in physics, chemistry, maths and electronics. I also held responsibility for the course's virtual learning environment on Moodle and corresponded with local universities.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: bottom; text-align: left;">Apr 2015</td>
+      <td class="dateto">to</td>
+      <td style="vertical-align: bottom; text-align: right;">Apr 2016</td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align: left; vertical-align: top;"><h3>Harlington Upper School</h3>(Bedfordshire)</td>
+      <td rowspan="2" style="vertical-align: top;"><h3>Teacher</h3><br>Preparing and delivering practical and theoretical lessons to students aged 13-19 in A-level physics, GCSE and BTEC science, GCSE maths and BTEC ICT. Also held responsibility for a mixed age tutor group and contributed to extra curricular activities such as homework help and assisting with the school’s biennial musical.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: bottom; text-align: left;">Sep 2013</td>
+      <td class="dateto">to</td>
+      <td style="vertical-align: bottom; text-align: right;">Apr 2015</td>
+    </tr>
+  </table>
+</div>
+
+<button class="accordion">Education</button>
+<div class="panel">
+  <table id="education">
+    <colgroup>
+      <col span="1" style="width: 20%;">
+      <col span="1" style="width: 80%;">
+    </colgroup>
+    <tr>
+      <td style="text-align: left; vertical-align: top;"><h3>Noregs teknisk-naturvitenskapelige universitet</h3>(NTNU)</td>
+      <td rowspan="2" style="vertical-align: top;"><h3>PhD in Engineering</h3><br>The label of "PhD in Engineering" comes from the faculty I worked in. A better umbrella-term for my work is applied mathematics. My thesis is titled "Decay behaviour, escape rates and state transitions in simple models for complex systems" and can be found <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3192450" target="_blank">here</a>. This involved applying mathematical principles and modelling methods to two different systems: nanotribological phenomena of atomically thin layered materials and drug resistance in chronic myeloid leukaemia treatment. As par for the course of completing my PhD, I attended conferences and published three papers (details of which can be found on my <a href="science">science</a> page). After presenting at conferences, I frequently received praise for the high level of pedagogy and quality of animations in my presentations.</td>
+    </tr>
+    <tr>
+      <td style="text-align: right; vertical-align: bottom;">May 2025<br>34 ECTS*<br>EQF Level 8**</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top;"><h3>University of Liverpool</h3></td>
+      <td rowspan="2" style="vertical-align: top;"><h3>MSc in Radiometrics: Instrumentation and Modelling – Distinction</h3><br>This course covered the theoretical basics of ionising radiation (its production and detection); the set-up, calibration and use of detector systems; and the creation of models of detector set-ups, which were then validated through practical experiment.<br/>I took a particular interest in the human factors of ionising radiation and chose this as the topic of my dissertation. This focussed on the importance and creation of risk assessments. For my project I created a successful model of a novel mobile compton camera using <a href="https://geant4.web.cern.ch" target="_blank">Geant4</a> and collected data to validate the model.<br/>Along with Geant4, I also became skilled in modelling using <a href="https://www.mathworks.com/products/matlab.html" target="_blank">MATLAB</a> and <a href="https://mcnp.lanl.gov/" target="_blank">MCNP</a>, and collected data using <a href="https://www.mirion.com/products/prospect-gamma-spectroscopy-software" target="_blank">ProSpect</a> and <a href="https://www.ortec-online.com/products/application-software/maestro-mca" target="_blank">Maestro</a> software.</td>
+    </tr>
+    <tr>
+      <td style="text-align: right; vertical-align: bottom;">Sep 2018<br>90 ECTS<br>EQF Level 7</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top;"><h3>Manchester Metropolitan University</h3></td>
+      <td rowspan="2" style="vertical-align: top;"><h3>Postgraduate certificate in Education in Physics with Maths – Pass with Merit</h3><br>I gained experience teaching Key Stage 3 and GCSE science and maths in several schools in the Greater Manchester area. This built a strong foundation for my skills for planning and delivering high quality lessons. As well as real practical experience teaching, I studied pedagogical topics relating to my practice and produced several literature reviews and reports of the theoretical foundations of teaching. I achieved qualified teacher status (<a href="https://www.gov.uk/guidance/qualified-teacher-status-qts" target="_blank">QTS</a>).</td>
+    </tr>
+    <tr>
+      <td style="text-align: right; vertical-align: bottom;">Jun 2013<br>30 ECTS<br>EQF Level 7</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top;"><h3>University of Manchester</h3></td>
+      <td rowspan="2" style="vertical-align: top;"><h3>BSc(Hons) in Physics – 2:2</h3><br>During my time at the University of Manchester, I chose to study a general overview of physics and its applications. The option topics I selected included theoretical topics, such as random processes; applied topics, such as biophysics; and more creative topics, such as science fiction and film. I also carried out practical work and produced a dissertation on the application of materials with a negative refractive index as invisibility cloaks. Alongside my academic studies, I was elected social secretary for the Physics Society for the period of Spring 2011 to Spring 2012. In this role, I planned and made promotional materials for events; mentored other students; and communicated with department staff.</td>
+    </tr>
+    <tr>
+      <td style="text-align: right; vertical-align: bottom;">Jun 2012<br>180 ECTS<br>EQF Level 6</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+    <tr>
+      <td style="text-align: left; vertical-align: top;"><h3>Harlington Upper School</h3></td>
+      <td rowspan="3" style="text-align: left; vertical-align: top;"><b>A-Levels:</b> Mathematics (A), Physics (B), Chemistry (B) <br/><b>AS-Levels:</b> Biology (C)<br/><b>GCSEs:</b> 10, Graded A*-B including English Language and Maths<br><br><b>Extracurricular Activities:</b> Played on the school's hockey team and played the tuba in several school ensembles.</td>
+    </tr>
+    <tr>
+      <td style="text-align: right; vertical-align: bottom;">Jun 2007 to 2009<br>EQF Levels 3 & 4</td>
+    </tr>
+  </table>
+  <p class="asterixtext">*European Credit Transfer and Accumulation System (<a href="https://ec.europa.eu/education/resources-and-tools/european-credit-transfer-and-accumulation-system-ects_en" target="_blank">ECTS</a>).<br/>**European Qualifications Framework (<a href="https://europa.eu/europass/en/european-qualifications-framework-eqf" target="_blank">EQF</a>) Levels.</p>
+</div>
+
+<button class="accordion">Skills & Competences</button>
+<div class="panel">
+  <p style="padding: 8px; margin:0; text-align:center;">Please select a theme to view my skills and competences in that area.</p>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <div class="tab">
+    <button class="tablinks active" onclick="openCategory(event, 'Tech')" style="width:25%;">
+      <div class="hoverable">
+        <img src="/images/it.png" class="tabimage">
+        <img src="/images/ithover.png" class="hover-top">
+      </div>
+      Technological
+    </button>
+    <button class="tablinks" onclick="openCategory(event, 'Math')" style="width:25%;">
+      <div class="hoverable">
+        <img src="/images/maths.png" class="tabimage">
+        <img src="/images/mathshover.png" class="hover-top">
+      </div>
+      Mathematical
+    </button>
+    <button class="tablinks" onclick="openCategory(event, 'Comm')" style="width:25%;">
+      <div class="hoverable">
+        <img src="/images/comms.png" class="tabimage">
+        <img src="/images/commshover.png" class="hover-top">
+      </div>
+    Communication
+    </button>
+    <button class="tablinks" onclick="openCategory(event, 'Misc')" style="width:25%;">
+      <div class="hoverable">
+        <img src="/images/misc.png" class="tabimage">
+        <img src="/images/mischover.png" class="hover-top">
+      </div>
+    Miscellaneous
+    </button>
+  </div>
+
+  <div id="Tech" class="tabcontent" style="display:block">
+    <p style="width: auto; text-align: center;">Generally, when working with unfamiliar software and programming languages, I am quick to learn and use new skills.</p>
+    <table id="skills" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 37%;">
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 13%;">
+      </colgroup>
+      <tr>
+        <td>Audio and video editing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+        <td>Office-type software</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+        <td>Python</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Computational and numerical modelling</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+        <td>Web design in html & CSS</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Digital design</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+        <td>Web design using SaaS or a CMS</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+
+    </table>
+    <table id="skills_mob" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 76%;">
+        <col span="1" style="width: 24%;">
+      </colgroup>
+      <tr>
+        <td>Audio and video editing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Computational and numerical modelling</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Digital design</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Office-type software</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Web design in html & CSS</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Web design using SaaS or a CMS</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+  <div id="Math" class="tabcontent">
+    <p style="width: auto; text-align: center;">Through my teaching and academic careers, I have put my aptitude for mathematics to good use.</p>
+    <table id="skills" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 37%;">
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 13%;">
+      </colgroup>
+      <tr>
+        <td>Budgeting</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+        <td>Numeracy</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Data analysis</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+        <td>Problem-solving</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Data visualisation</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+        <td>Statistical analysis</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Logistics and planning</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+    </table>
+    <table id="skills_mob" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 76%;">
+        <col span="1" style="width: 24%;">
+      </colgroup>
+      <tr>
+        <td>Budgeting</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Data analysis</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Data visualisation</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Logistics and planning</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Numeracy</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Problem-solving</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Statistical analysis</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="Comm" class="tabcontent">
+    <p style="width: auto; text-align: center;">One of my greatest assets is my ability to adapt my communication skills for different audiences and various formats.</p>
+    <table id="skills" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 37%;">
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 13%;">
+      </colgroup>
+      <tr>
+        <td>Graphics & scientific figure creation</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+        <td>Presenting</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Illustration</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+        <td>Proofreading, editing & feedback</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Lecturing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+        <td>Scientific report writing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Mediation</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+        <td>Technical writing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Pop-science styled writing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align: center; vertical-align: middle;"><img src="/images/line2.png"></td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+        <td>Norwegian</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Reading</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+        <td style="text-indent: 30px;">Reading</td>
+        <td style="color: #9EFFA1;">● ● ● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Writing</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+        <td style="text-indent: 30px;">Writing</td>
+        <td style="color: #9EFFA1;">● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Listening</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+        <td style="text-indent: 30px;">Listening</td>
+        <td style="color: #9EFFA1;">● ● ● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Speaking</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+        <td style="text-indent: 30px;">Speaking</td>
+        <td style="color: #9EFFA1;">● ●</td>
+      </tr>
+    </table>
+    <table id="skills_mob" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 76%;">
+        <col span="1" style="width: 24%;">
+      </colgroup>
+      <tr>
+        <td>Graphics & scientific figure creation</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Presenting</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Illustration</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Proofreading, editing & feedback</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Lecturing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Scientific report writing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Mediation</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Technical writing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Pop-science styled writing</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align: center; vertical-align: middle;"><img src="/images/line2.png"></td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Reading</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Writing</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Listening</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Speaking</td>
+        <td style="color: #9EFFA1;">● ● ● ● ●</td>
+      </tr>
+      <tr>
+        <td>Norwegian</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Reading</td>
+        <td style="color: #9EFFA1;">● ● ● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Writing</td>
+        <td style="color: #9EFFA1;">● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Listening</td>
+        <td style="color: #9EFFA1;">● ● ● ●</td>
+      </tr>
+      <tr>
+        <td style="text-indent: 30px;">Speaking</td>
+        <td style="color: #9EFFA1;">● ●</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div id="Misc" class="tabcontent">
+    <p style="width: auto; text-align: center;">Here are my other skills and competences.</p>
+    <table id="skills" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 37%;">
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 13%;">
+      </colgroup>
+      <tr>
+        <td>Driving on the left</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+        <td>Event planning</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Driving on the right</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+        <td>Keeping houseplants alive</td>
+        <td style="color: #9EFFA1;">⬤ ⬤</td>
+      </tr>
+    </table>
+    <table id="skills_mob" style="width: 852px; margin: auto;">
+      <colgroup>
+        <col span="1" style="width: 76%;">
+        <col span="1" style="width: 24%;">
+      </colgroup>
+      <tr>
+        <td>Driving on the left</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Driving on the right</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+        <td>Event planning</td>
+        <td style="color: #9EFFA1;">⬤ ⬤ ⬤ ⬤</td>
+      </tr>
+      <tr>
+        <td>Keeping houseplants alive</td>
+        <td style="color: #9EFFA1;">⬤ ⬤</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<button class="accordion">Personal Qualities</button>
+<div class="panel">
+  <div class="PQs">
+  <ul>
+      <li>creative</li>
+      <li>curious</li>
+      <li>encouraging</li>
+      <li>flexible</li>
+      <li>friendly</li>
+      <li>funny</li>
+      <li>helpful</li>
+      <li>independent</li>
+      <li>kind</li>
+      <li>logical</li>
+      <li>proactive</li>
+      <li>realistic</li>
+      <li>resilient</li>
+      <li>supportive</li>
+      <li>thrifty</li>
+  </ul>
+  </div>
+</div>
+
+<button class="accordion">Hobbies & Interests</button>
+<div class="panel">
+  <table id="IandH" style="margin: auto;">
+    <colgroup>
+      <col span="1" style="width: 50%;">
+      <col span="1" style="width: 50%;">
+    </colgroup>
+    <tr>
+      <td>Crafting</td>
+      <td>Equality, equity & justice</td>
+    </tr>
+    <tr>
+      <td style="text-indent: 20px;">⚬ Painting</td>
+      <td>Environmental issues</td>
+    </tr>
+    <tr>
+      <td style="text-indent: 20px;">⚬ Sewing</td>
+      <td>Cinema</td>
+    </tr>
+    <tr>
+      <td style="text-indent: 20px;">⚬ Knitting</td>
+      <td style="text-indent: 20px;">⚬ Horror genre</td>
+    </tr>
+    <tr>
+      <td>Baking</td>
+      <td style="text-indent: 20px;">⚬ Animation</td>
+    </tr>
+    <tr>
+      <td>Playing the tuba</td>
+      <td style="text-indent: 20px;">⚬ Real effects</td>
+    </tr>
+    <tr>
+      <td>Gardening</td>
+      <td>Historical contexts for modern issues</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; vertical-align: middle;"><img src="/images/line.png"></td>
+    </tr>
+  </table>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+
+    this.classList.toggle("active");
+
+     
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</p>
+
+
+ 
+ <footer>
+   Website last updated by Jennifer Sheehan in March 2026.
+ </footer>
+
+</body>
+</html>

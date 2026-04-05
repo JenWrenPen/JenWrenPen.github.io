@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Jennifer.Sh</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on Jennifer.Sh</description>
+    <generator>Hugo</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>&lt;p&gt;-&amp;ndash;&lt;/p&gt;&#xA;&lt;p&gt;title: About&lt;/p&gt;&#xA;&lt;p&gt;type: page&lt;/p&gt;&#xA;&lt;p&gt;-&amp;ndash;&lt;/p&gt;&#xA;&lt;p&gt;### About me!&lt;/p&gt;&#xA;&lt;p&gt;Hi, I&amp;rsquo;m Jennifer.Sh. I&amp;rsquo;m an ex-teacher who has returned to academia. My background in teaching science, maths, electronics and IT gave me a great foundation for working with interdisciplinary subjects during my PhD, which I successfully defended in May 2025. During my doctoral work, I studied drug resistance in cancer and thermal effects in nanoscale frictional phenomena, but still kept an interest in nuclear radiation monitoring and safety - the subject of my master&amp;rsquo;s degree.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
