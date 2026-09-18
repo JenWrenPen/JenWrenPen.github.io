@@ -1,0 +1,211 @@
+/***** General *****/
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #9EFFA1;
+  color: #111;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #203320;
+}
+
+
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #9EFFA1;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  position: sticky;
+  top: 100%;
+}
+
+/***** Mobile *****/
+
+p {
+  padding: 0 20px;
+  margin: 30px 0;
+  font-size: 36px;
+}
+
+h1 {
+  padding: 0 20px;
+  margin: 30px 0;
+  font-size: 50px;
+}
+
+h2 {
+  padding: 0 20px;
+  margin: 30px 0;
+  font-size: 42px;
+}
+
+h3 {
+  padding: 0 20px;
+  margin: 30px 0;
+  font-size: 42px;
+}
+
+.navbar {
+  display: none;
+}
+
+.mobnavbar {
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-color: #468949;
+  color: #EEE;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.dropbtn {
+  background-color: inherit;
+  height: 100px;
+  color: #EEE;
+  border: none;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.closebtn {
+  background-color: inherit;
+  height: 100px;
+  color: #EEE;
+  border: none;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  float: none;
+  background-color: #468949;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.show {display: block;}
+
+.navlinks {
+  text-align: center;
+
+  ul {
+    display: inline;
+    line-height: 57px;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    font-size: 60px;
+  }
+  
+  li {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  a {
+    color: #EEE;
+    text-decoration: none;
+    padding: 20px 15px;
+
+    &:hover {
+      background-color: #59B05C;
+      transition: 0.3s;
+      color: #DDD;
+    }
+  }
+}
+
+
+/***** PC *****/
+
+@media only screen and (min-width: 992px) {
+
+  p {
+    padding: 0 20px;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  h1 {
+    padding: 0 20px;
+    margin: 20px 0;
+    font-size: 32px;
+  }
+
+  h2 {
+    padding: 0 20px;
+    margin: 20px 0;
+    font-size: 28px;
+  }
+
+  h3 {
+    padding: 0 20px;
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .mobnavbar {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 57px;
+    display: block;
+    background-color: #468949;
+    color: #EEE;
+  }
+
+  .navlinks {
+    text-align: center;
+
+    ul {
+      display: inline;
+      line-height: 57px;
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      background: none;
+      font-size: 40px;
+    }
+  
+    li {
+      display: inline;
+    }
+
+    a {
+      color: #EEE;
+      text-decoration: none;
+      padding: 0px 15px;
+
+      &:hover {
+        background-color: #59B05C;
+        transition: 0.3s;
+        color: #DDD;
+      }
+    }
+  }
+}
